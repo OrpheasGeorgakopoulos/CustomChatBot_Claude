@@ -89,18 +89,12 @@ SYSTEM_PROMPT = "You are an expert in programming, electronics, and embedded sys
 
 ## 📸 Preview
 
-```text
-┌─────────────────────────────────────────┐
-│         Universal Assistant             │
-├─────────────────────────────────────────┤
-│ You: Hello                              │
-│                                         │
-│ Bot: Hi! How can I help you today?      │
-│                                         │
-├─────────────────────────────────────────┤
-│ [ Type message here... ]      [Send]    │
-└─────────────────────────────────────────┘
-```
+<div align="center">
+
+<img src="preview_img.png" alt="Universal Assistant Preview" width="800">
+
+</div>
+
 
 ---
 
