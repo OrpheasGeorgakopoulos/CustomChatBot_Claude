@@ -1,19 +1,17 @@
-# CustomChatBot_Claude
+# 🤖 Universal Assistant
 
 <div align="center">
 
-<h1>🤖 Universal Assistant</h1>
+![Preview](img_preview.png)
 
-<p>
-A modern desktop AI chatbot powered by Anthropic Claude.
-Built with Python, Tkinter, and real-time streaming responses.
-</p>
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
+![Anthropic](https://img.shields.io/badge/Claude-Anthropic-orange?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-green?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
-<p>
-<img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/Claude-Anthropic-orange?style=for-the-badge">
-<img src="https://img.shields.io/badge/UI-Tkinter-green?style=for-the-badge">
-</p>
+**A modern desktop AI assistant powered by Claude and built with Python.**
+
+Fast. Lightweight. Responsive.
 
 </div>
 
@@ -21,23 +19,39 @@ Built with Python, Tkinter, and real-time streaming responses.
 
 ## ✨ Features
 
-✔ Real-time streaming AI responses
+* ⚡ Real-time streaming AI responses
+* 🖥️ Clean desktop interface built with Tkinter
+* 🧠 Powered by Anthropic Claude
+* 💬 Persistent conversation context
+* 📄 Export chat history to Markdown (`.md`)
+* 🚀 Multi-threaded architecture for smooth performance
+* 🎯 Customizable assistant personality via system prompts
+* 🔗 Direct GitHub profile integration
 
-✔ Clean and lightweight desktop interface
+---
 
-✔ Conversation memory
+## 📸 Preview
 
-✔ Multi-threaded request handling
+![Application Preview](img_preview.png)
 
-✔ Customizable AI personality
+---
 
-✔ Dark theme UI
+## 🛠️ Requirements
 
-✔ One-click GitHub profile access
+* Python 3.10+
+* Anthropic API Key
+* Internet connection
 
 ---
 
 ## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/OrpheasGeorgakopoulos/Universal-Assistant.git
+cd Universal-Assistant
+```
 
 Install dependencies:
 
@@ -45,17 +59,15 @@ Install dependencies:
 pip install anthropic
 ```
 
----
+Configure your API key:
 
-## 🔑 API Key Setup
+### Windows (PowerShell)
 
-### Windows
-
-```cmd
-set ANTHROPIC_API_KEY=your_api_key_here
+```powershell
+$env:ANTHROPIC_API_KEY="your_api_key_here"
 ```
 
-### macOS / Linux
+### Linux / macOS
 
 ```bash
 export ANTHROPIC_API_KEY="your_api_key_here"
@@ -63,7 +75,7 @@ export ANTHROPIC_API_KEY="your_api_key_here"
 
 ---
 
-## 🚀 Run
+## 🚀 Launch
 
 ```bash
 python main.py
@@ -71,62 +83,86 @@ python main.py
 
 ---
 
-## 🧠 Customization
+## ⚙️ Configuration
 
-Change the assistant personality by editing:
+Customize the assistant's behavior by editing:
 
 ```python
-SYSTEM_PROMPT = "You are a friendly and helpful assistant. Keep your answers concise."
+SYSTEM_PROMPT = "You are a friendly and helpful assistant..."
 ```
 
-Example:
+Examples:
 
-```python
-SYSTEM_PROMPT = "You are an expert in programming, electronics, and embedded systems."
+* 👨‍💻 Programming Assistant
+* 🔧 Electronics Expert
+* 📚 Learning Tutor
+* 🤝 Customer Support Agent
+* 🏋️ Personal Coach
+* 🧪 Technical Research Assistant
+
+---
+
+## 🏗️ Project Structure
+
+```text
+.
+├── main.py
+├── img_preview.png
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## 📸 Preview
+## 🔧 Built With
 
-<div align="center">
-
-<img src="preview_img.png" alt="Universal Assistant Preview" width="800">
-
-</div>
-
+| Technology    | Purpose                         |
+| ------------- | ------------------------------- |
+| Python        | Core application                |
+| Tkinter       | Desktop UI                      |
+| Anthropic API | AI inference                    |
+| Threading     | Non-blocking response streaming |
 
 ---
 
-## 🛠 Built With
+## 📄 Chat Export
 
-<ul>
-<li>Python</li>
-<li>Tkinter</li>
-<li>Anthropic Claude API</li>
-<li>Threading</li>
-<li>Webbrowser Module</li>
-</ul>
+Conversations can be exported directly to Markdown files:
+
+```text
+chat_history.md
+```
+
+Perfect for:
+
+* Documentation
+* Research notes
+* Project logs
+* Knowledge archiving
+
+---
+
+## 🔒 Security
+
+* API keys are never hardcoded
+* Credentials are loaded from environment variables
+* No local storage of sensitive data
+* Direct communication with Anthropic services
 
 ---
 
 ## 👨‍💻 Author
 
-<div align="center">
+**Orpheas Georgakopoulos**
 
-### Orpheas Georgakopoulos
-
-<a href="https://github.com/OrpheasGeorgakopoulos">
-GitHub Profile
-</a>
-
-</div>
+GitHub: https://github.com/OrpheasGeorgakopoulos
 
 ---
 
 <div align="center">
 
-⭐ If you like this project, consider starring the repository.
+⭐ If you find this project useful, consider starring the repository.
+
+Built with Python, Claude, and a lot of coffee ☕
 
 </div>
-
