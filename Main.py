@@ -3,6 +3,7 @@ import threading
 import webbrowser
 import tkinter as tk
 from tkinter import scrolledtext
+from tkinter import filedialog
 
 def open_github(event=None):
     webbrowser.open("https://github.com/OrpheasGeorgakopoulos")
@@ -35,7 +36,7 @@ class ChatbotUI:
         )
         self.chat_area.pack(pady=10, padx=10)
         self.chat_area.insert(tk.END,
-                              "Welcome to Universal Assistant\n"
+                              "Welcome to Universal Chatbot Assistant\n"
                               "Ask about anything!\n")
         self.chat_area.config(state="disabled")
 
@@ -54,6 +55,12 @@ class ChatbotUI:
             input_frame, text="Send", command=self.send_message, font=("Arial", 11),
             bg="#4CAF50", fg="#FFFFFF", activebackground="#45A049"
         ).pack(side=tk.LEFT, padx=5)
+
+        # Save chat button
+        tk.Button(
+            root, text="Save Chat", command=self.save_chat, font=("Arial", 11),
+            bg="#2196F3", fg="#FFFFFF", activebackground="#1976D2"
+        ).pack(pady=5)
 
         # Clear button
         tk.Button(
@@ -126,12 +133,29 @@ class ChatbotUI:
         # self.send_button.config(state='normal')
         # self.input_field.focus()
 
+    def save_chat(self):
+        file_path = filedialog.asksaveasfilename(
+            defaultextension=".md",
+            filetypes=[("Markdown files", "*.md"), ("All files", "*.*")]
+        )
+
+        if not file_path:
+            return
+
+        with open(file_path, "w", encoding="utf-8") as file:
+            file.write("# Chat History\n\n")
+
+            for message in self.messages:
+                role = "You" if message["role"] == "user" else "Bot"
+                file.write(f"## {role}\n\n")
+                file.write(message["content"] + "\n\n")
+
     def clear_chat(self):
         self.chat_area.config(state='normal')
         self.chat_area.delete(1.0, tk.END)
         self.chat_area.insert(tk.END,
-                              "Welcome to MicroChat!\n"
-                              "Ask about microcontrollers.\n")
+                              "Welcome to Universal Chatbot Assistant!\n"
+                              "Ask about anything.\n")
         self.chat_area.config(state='disabled')
 
 
