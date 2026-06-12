@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Preview](img_preview.png)
+![Preview](banner.png)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
 ![Anthropic](https://img.shields.io/badge/Claude-Anthropic-orange?style=for-the-badge)
