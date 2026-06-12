@@ -1,52 +1,138 @@
 # CustomChatBot_Claude
 
-# Universal Assistant
+<div align="center">
 
-A simple desktop AI chatbot made with Python, Tkinter, and Anthropic Claude.
+<h1>🤖 Universal Assistant</h1>
 
-## Features
+<p>
+A modern desktop AI chatbot powered by Anthropic Claude.
+Built with Python, Tkinter, and real-time streaming responses.
+</p>
 
-* Clean dark-mode interface
-* Real-time AI responses
-* Conversation memory
-* Clear chat button
-* GitHub profile link
-* Easy to customize
+<p>
+<img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python">
+<img src="https://img.shields.io/badge/Claude-Anthropic-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/UI-Tkinter-green?style=for-the-badge">
+</p>
 
-## Requirements
+</div>
 
-Install the Anthropic library:
+---
+
+## ✨ Features
+
+✔ Real-time streaming AI responses
+
+✔ Clean and lightweight desktop interface
+
+✔ Conversation memory
+
+✔ Multi-threaded request handling
+
+✔ Customizable AI personality
+
+✔ Dark theme UI
+
+✔ One-click GitHub profile access
+
+---
+
+## 📦 Installation
+
+Install dependencies:
 
 ```bash
 pip install anthropic
 ```
 
-## Setup
+---
 
-Set your Anthropic API key:
+## 🔑 API Key Setup
 
-```bash
-export ANTHROPIC_API_KEY="your_api_key_here"
-```
-
-On Windows:
+### Windows
 
 ```cmd
 set ANTHROPIC_API_KEY=your_api_key_here
 ```
 
-## Run
+### macOS / Linux
+
+```bash
+export ANTHROPIC_API_KEY="your_api_key_here"
+```
+
+---
+
+## 🚀 Run
 
 ```bash
 python main.py
 ```
 
-## About
+---
 
-Universal Assistant is a lightweight chatbot app that lets users talk with Claude through a simple Tkinter desktop window.
+## 🧠 Customization
 
-## Author
+Change the assistant personality by editing:
 
-Made by Orpheas Georgakopoulos
+```python
+SYSTEM_PROMPT = "You are a friendly and helpful assistant. Keep your answers concise."
+```
 
-GitHub: https://github.com/OrpheasGeorgakopoulos
+Example:
+
+```python
+SYSTEM_PROMPT = "You are an expert in programming, electronics, and embedded systems."
+```
+
+---
+
+## 📸 Preview
+
+```text
+┌─────────────────────────────────────────┐
+│         Universal Assistant             │
+├─────────────────────────────────────────┤
+│ You: Hello                              │
+│                                         │
+│ Bot: Hi! How can I help you today?      │
+│                                         │
+├─────────────────────────────────────────┤
+│ [ Type message here... ]      [Send]    │
+└─────────────────────────────────────────┘
+```
+
+---
+
+## 🛠 Built With
+
+<ul>
+<li>Python</li>
+<li>Tkinter</li>
+<li>Anthropic Claude API</li>
+<li>Threading</li>
+<li>Webbrowser Module</li>
+</ul>
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+### Orpheas Georgakopoulos
+
+<a href="https://github.com/OrpheasGeorgakopoulos">
+GitHub Profile
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+⭐ If you like this project, consider starring the repository.
+
+</div>
+
