@@ -3,6 +3,7 @@
 <div align="center">
 
 ![Preview](banner.png)
+Note: UI is different.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
 ![Anthropic](https://img.shields.io/badge/Claude-Anthropic-orange?style=for-the-badge)
